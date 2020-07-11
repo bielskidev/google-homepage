@@ -31,6 +31,7 @@ html {
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
+  height: 100vh;
 }
 
 *,
@@ -168,4 +169,30 @@ html {
 
 .search-container__button:hover {
   background-color: var(--button-color-hover);
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  background: hsl(0, 0%, 95%);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.page-footer__link-holder {
+  display: flex;
+  list-style-type: none;
+}
+
+.page-footer__item {
+  margin: 0 1em;
+  padding: 0.5em 0;
+}
+
+.page-footer__link {
+  text-decoration: none;
+  color: hsl(214, 3%, 49%);
+  font-size: 0.9rem;
+  border: var(--border-color);
 }
