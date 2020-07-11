@@ -5,12 +5,19 @@
 :root {
   --background-color: hsla(0, 0%, 100%, 1);
   --text-color: hsla(0, 0%, 0%, 0.9);
+  
   --link-color: hsla(0, 0%, 0%, 0.9);
   --link-color-hover: hsla(0, 0%, 0%, 0.7);
+
   --border-color: hsla(214, 12%, 88%, 1);
+  --border-color-hover: hsla(214, 12%, 88%, 1);
+
+  --button-color: hsla(0, 0%, 95%, 1);
+  --button-color-hover: hsla(0, 0%, 95%, 0.5);
 
   --text-size: 1rem;
   --link-size: 0.8125rem;
+  --button-font-size: 0.9rem;
 }
 
 /* ////////////////////////////////////////////////////////////////////////// */
@@ -146,4 +153,19 @@ html {
   background-image: url(../img/google-sprites.png);
   background-position: -37px -1px;
   z-index: 4;
+}
+
+.search-container__button {
+  background-color: var(--button-color);
+  border: 1px solid var(--border-color);
+  padding: 0.8em 1.4em;
+  border-radius: 6px;
+  margin: 0 0.4em;
+  font-size: var(--button-font-size);
+  cursor: pointer;
+  outline: none;
+}
+
+.search-container__button:hover {
+  background-color: var(--button-color-hover);
 }
